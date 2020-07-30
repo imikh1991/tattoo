@@ -1,0 +1,12 @@
+Папка для стилевых файлов.
+
+В данном случае мы используем файл normalize.css
+https://github.com/necolas/normalize.css
+
+--
+
+Пример структуры файлов:
+
+css/
+| - style.css
+| - [другие *.css файлы]

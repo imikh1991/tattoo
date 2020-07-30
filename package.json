@@ -1,0 +1,26 @@
+{
+  "name": "tattoo",
+  "version": "1.0.0",
+  "description": " Проект для студии красоты 29 июля 2020-Талисия-город Тула, улица ул. Вересаева, д. 10, корп. А",
+  "main": "index.js",
+  "scripts": {
+    "watch": "parcel index.html --open",
+    "watch-eye-brows": "parcel tattoo-eye-brows.html --open",
+    "watch-eyes": "parcel tattoo-eyes.html --open",
+    "watch-lips": "parcel tattoo-lips.html --open"
+
+  },
+  "keywords": [],
+  "author": "Илья",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "parcel-bundler": "1.12.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.0.0-alpha5",
+    "normalize.css": "^8.0.1",
+    "swiper": "^6.0.4"
+  }
+}
