@@ -1,8 +1,10 @@
 /* базовая стилизация для страницы eye-brows */
 body {
+    width: 1200px;
     font-family: 'Arial', sans-serif;
     font-weight:400;
-	margin: 0;
+    margin: 0;
+    width: 100%;
 	padding: 0;
 	font-size: 13px;
     line-height: 17px; 
@@ -22,18 +24,18 @@ h2 {
     font-size: 24px;
     font-weight:700;
 	line-height: 36px;
-	margin-left: 65px;
+	
 }
 
 main {
-    width: 685px;
-    margin: 110px auto 0 150px;
+    width: 665px;
+    margin: 110px auto 0 auto;
 }
 
 table {
     border-collapse: collapse;
-    float: right;
-    height: 110px;
+    width: 100%;
+    min-height: 110px;
 }
 
 table, th, td {
@@ -45,7 +47,7 @@ table, th, td {
 }
 
 td  {
-    width: 315px;
+    max-width: 315px;
     text-align: center;
     height: 30px;
 }
@@ -64,6 +66,46 @@ a:hover {
     font-weight:400;
 	line-height: 12px;
 	margin-left: 0px;
+}
+.main-lips {
+    /* определим ширину для контейнера lips отдельно */
+    min-width: 815px;
+}
+
+.lips-text-1 {
+    /* определим ширину для контейнера lips отдельно */
+   margin-left: 60px;
+   min-width: 335px;
+
+
+}
+
+.reg-form:hover {
+    color: white;
+
+}
+
+.content-main {
+
+    /* определим базовый основной контейнер по макету */
+    width: 645px;
+    min-height: 1200px;
+    margin-left: 80px;
+}
+
+.main-lips-content {
+    margin-left: 60px;
+    min-height: 900px;
+}
+
+.content-specialist-wrapper {
+    width: 645px;
+    min-height: 300px;
+    margin: 10px auto 0 auto;
+}
+
+.img-eyes {
+    margin-right: 40px;
 }
 
 .header-text-wrapper {
@@ -93,24 +135,52 @@ a:hover {
 
 .contact-form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 25px;
     align-items: stretch;
     background-color: rgb(255, 244, 244);
-    width: 646px;
-    height: 91px;
+    width: 100%;
+    min-height: 91px;
     margin-bottom: 10px;
+    max-width: 646px;
 }
 
 .contact-form__right {
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 323px;
+}
+
+.img-phone {
+    display: flex;
+    justify-content: stretch;
+    margin: auto auto auto auto;
+}
+
+.button-wrapper {
+    display: inline-block;
+}
+
+.contact-form__line {
+    top: 25px;
+    bottom: auto;
+    position: relative;
+    width: 0.5px;
+    height: 40px;
+    border: 1px solid #ffd3d3;
 }
 
 .contact-form__left {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 323px;
 }
 
 button,
@@ -136,8 +206,9 @@ button,
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 181px;
-    height: 149px;
+    width: 100%;
+    max-width: 181px;
+    min-height: 149px;
 }
 
 .services__right {
@@ -154,86 +225,123 @@ button,
     margin: 0px;
 }
 
-.text-story-columns {
-    margin-top: 30px;
+.text {
+    margin-right: 0px;
+}
+
+.block-1 {
+    margin-top: 25px;
     margin-right: 15px;
     display: flex;
     justify-content: space-between;
 }
 
-.text-story-columns__text {
-    margin-top: 36px;
-    margin-left: 62px;
-    width: 320px;
-    height: 300px;
+.block-1__text {
+    margin-top: 26px;
+    margin-right: 20px;
+    
+    width: 100%;
+    min-height: 300px;
 }
 
-.text-story-article {
+.eyes-text {
+    /*переопределим отступ только для страницы eyes */
+    margin-top: 0px;
+}
+
+.lips-text-block-1 {
+    /*переопределим отступ только для страницы lips */
+    margin-top: 0px;
+
+}
+
+.block-2 {
     display: flex;
-    justify-content: flex-end;
     margin-right: 0px;
-    height: 90px;
+    min-height: 90px;
 }
 
-.text-story {
+.block-3 {
     display: flex;
-    justify-content: flex-end;
-
 }
 
-.text-story__text {
+.block-3__text {
     margin-left: 10px;
-    width: 290px;
-    height: 250px;
+    width: 100%;
+    min-height: 250px;
+    /* центровка текста внутри контейнера */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.lips-text-block-3 {
+    /*переопределим отступ только для страницы lips */
+    margin-right: 35px;
 
 }
 
-.text-story-center {
+.block-4 {
     padding-top: 30px;
-    height: 320px;
+    min-height: 320px;
 }
 
-.text-story-center__text {
-    float: right;
+.block-4__text {
+    width: 100%;
     margin-top: 20px;
 }
 
-.text {
-    margin-right: 0px;
-
-}
 
 .advantages {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 815px;
+    margin-right: auto;
+    margin-left: auto;
     list-style: none;
-    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .advantages-header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 5px;
-    text-align: center;
+    justify-content: center;
+}
+
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .advantages__list-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+   
+    width: 100%; 
+    
 }
 
 .advantages__list-item-text {
-    width: 97px;
     text-align: center;
     font-weight: 700;
 }
 
 .specialist {
     display: flex;
-    width: 543px;
-    height: 764px;
+    width: 100%;
+    height: 100%;
+    max-width: 543px;
+    min-height: 764px;
+
+    margin-left: 70px;
+
+}
+
+.specialist-header {
+    margin-left: 65px;
 }
 
 .specialist__text {
@@ -259,7 +367,7 @@ button,
 /*для слайдера Swiper JS */
 .swiper-container {
     width: 100%;
-    height: 128px;
+    min-height: 128px;
   }
 
   .swiper-slide {
@@ -283,7 +391,7 @@ button,
 
   .swiper-button-next,
   .swiper-button-prev {
-    width: 74px;
+    width: 71px;
     height: 31px;
   }
 
